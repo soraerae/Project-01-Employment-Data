@@ -63,8 +63,14 @@ The Mid-Atlantic and New England regions are the slowest growing regions.
 The tech industry has shown the highest growth, and the retail industry has shown the greatest decline.
 
 ### Industry Data Handling: 
+Too many API calls on the BLS API meant I exceeded my rate limit and could not efficiently retrieve data that way. I was able to find relevant Excel spreadsheets that I incorporated into my DataFrame.
+
+Data was pulled on employment across various industries and age groups from 2011 - 2018. After cleaning up the data, I removed the age group information and focused on the industries.
 
 ### Industry Findings: 
+The data eventually challenged my assumptions. I discovered that Manufacturing was a growing industry and in the top 10 industries since 2011. Additionally, I learned Education and healthcare were in the top 10, which I really didn't think were growing industries. However, this does make sense as health care services are in high demand with a large increase of Americans with health insurance since passage of the ACA.
+
+Additionally, the industries with the sharpest decline included Department stores, which I assumed would show decline and newspaper publishers (not a surprise). 
 
 ## Age Demographic Data
 ### Age Group Breakdown: 
