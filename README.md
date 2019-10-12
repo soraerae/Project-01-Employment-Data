@@ -48,16 +48,17 @@ The Mid-Atlantic and New England regions are the slowest growing regions.
 
 ## Industry Data
 ### Top 10 Industries Analysed: 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- Education and health services
+- Wholesale and retail trade
+- Health care and social assistance
+- Professional and business services
+- Retail trade
+- Manufacturing
+- Leisure and hospitality
+- Educational services
+- Professional and technical services
+- Accommodation and food services
+
 ### Industry Hypothesis: 
 The tech industry has shown the highest growth, and the retail industry has shown the greatest decline.
 
