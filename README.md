@@ -35,7 +35,9 @@ Using data from the US Bureau of Labor Statistics (BLS), we analyzed employment 
 Southwest and West have shown the greatest job growth and the Midwest has shown the greatest job loss.
 
 ### Regional Data Handling: 
-Unfortunately continuously hitting the BLS API rate limit made pulling the data directly from the API impossible. Fortunately the BLS has options to pull data into Excel files. 
+Region code is found in: https://github.com/soraerae/Project-01-Employment-Data/tree/master/Region%20Code
+
+Unfortunately continuously hitting the BLS API rate limit made pulling the data directly from the API impossible. Fortunately the BLS has options to pull data into Excel files. State excel files are saved in the State Data folder. 
 
 Data on the number of employed persons (non-Farm) was pulled for all 50 states, monthly, for 2008-2018 to be read into a Pandas DataFrame. Once the states information was cleaned the data could be broken down into the BLS regions for ease of analysis. 
 
@@ -63,6 +65,8 @@ The Mid-Atlantic and New England regions are the slowest growing regions.
 The tech industry has shown the highest growth, and the retail industry has shown the greatest decline.
 
 ### Industry Data Handling: 
+Industry code is saved in: https://github.com/soraerae/Project-01-Employment-Data/tree/master/Project_Industry along with the saved Excel data files. 
+
 Too many API calls on the BLS API meant I exceeded my rate limit and could not efficiently retrieve data that way. I was able to find relevant Excel spreadsheets that I incorporated into my DataFrame.
 
 Data was pulled on employment across various industries and age groups from 2011 - 2018. After cleaning up the data, I removed the age group information and focused on the industries.
@@ -86,6 +90,8 @@ Age groups 55+ have seen the highest job growth.
 I had several questions I wanted to answer: what was the overall trend in employment, both by age group and overall, what was the percentage of emplyment by age group and has this changed, and what trends might look like moving forward. Line charts show the employment trends clearly. Pie charts breakdown percentage employment by age group. Regression may show trends.
 
 ### Age Demographic Data Handling: 
+Age demographic code is saved in: https://github.com/soraerae/Project-01-Employment-Data/tree/master/age_group_notebooks 
+
 I wanted to look a employment trends based on age demographics. There are two primary sources for this data in the US: the Bureau of Labor Statistics(BLS) and the FRED database from the the St. Louis branch of the US Federal Reserve. After inspecting the two databases, the data I wanted and the functionality of the database pointed to the BLS. The BLS API had example code to perform a request, which I used to pull data on persons employed in six age groups from 2009 to 2018. The API request was relatively straighforward but manipulating the json data into an orgainzed, usable dataframe was more complicated. Once I formed a df that was usable, I saved it to a csv file. This proved beneficial as I started receiving messages I had used my daily allotments of daily requests (even though I hadn't made any that day). I started a new notebook and used the csv file to further clean and then analyze the data. This proved much easier to use.
 
 ### Age Demographic Findings: 
